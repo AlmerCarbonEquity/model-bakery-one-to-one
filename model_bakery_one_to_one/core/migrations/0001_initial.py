@@ -21,11 +21,4 @@ class Migration(migrations.Migration):
                 ('user', models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='person', to=settings.AUTH_USER_MODEL)),
             ],
         ),
-        migrations.CreateModel(
-            name='Profile',
-            fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('persons', models.ManyToManyField(related_name='profiles', to='core.person')),
-            ],
-        ),
     ]
